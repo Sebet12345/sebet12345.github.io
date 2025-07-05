@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Islamische Gebetszeiten</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <script>
+  const pass = prompt("Bitte Passwort eingeben:");
+  if (pass !== ".Ammar.") {
+    alert("Falsches Passwort! Zugriff verweigert.");
+    window.location.href = "https://github.com"; // Oder eine andere Seite
+  }
+</script>
+
+  
+    <div class="container">
+    <h1>🕌 Gebetszeiten für heute</h1>
+    <div id="location">Standort: wird ermittelt...</div>
+    <div id="times">
+      <p>Fajr: <span id="fajr">--:--</span> bis <span id="fajrEnd">--:--</span></p>
+      <p>Dhuhr: <span id="dhuhr">--:--</span> bis <span id="dhuhrEnd">--:--</span></p>
+      <p>Asr: <span id="asr">--:--</span> bis <span id="asrEnd">--:--</span></p>
+      <p>Maghrib: <span id="maghrib">--:--</span> bis <span id="maghribEnd">--:--</span></p>
+      <p>Isha: <span id="isha">--:--</span> bis <span id="ishaEnd">--:--</span></p>
+    </div>
+
+    <button id="toggle-darkmode">🌙 Darkmode wechseln</button>
+
+    <p class="footer">Täglich aktualisiert | 📿</p>
+  </div>
+
+  <!-- ... Rest vom Code -->
+
+<button id="show-countdown">⏳ Countdown bis zum nächsten Gebet</button>
+<div id="countdown" style="margin-top: 15px; font-size: 20px; font-weight: bold;"></div>
+
+<!-- ... Rest bleibt -->
+
+  <script src="java.js"></script>
+</body>
+</html>
